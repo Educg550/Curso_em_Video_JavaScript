@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+    <style>
+        div#area
+        {
+            background-color: green;
+            width: 500px;
+            height: 230px;
+            font: normal 20pt Helvetica;
+            text-align: center;
+            line-height: 48px;
+        }
+        body
+        {
+            background-color: rgb(54, 54, 54);
+        }
+        h1
+        {
+            color: rgb(47, 47, 214);
+            font: normal 45pt Times;
+        }
+        p
+        {
+            color: white;
+        }
+        p#thanks
+        {
+            color: rgb(255, 251, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <h1>Ganhafoto...🐢</h1>
+        <p>Long time no see, please subscribe to my channel and click this 👽🖖</p>
+        <p id="thanks"></p>
+        <p id="cuidado"></p>
+    </div>
+    
+    <script>
+        var cuidado = document.querySelector('p#cuidado')
+        var thanks = document.querySelector('p#thanks')
+        var div = document.querySelector('div#area')
+        div.addEventListener('click', clicar)
+        div.addEventListener('mouseenter', entrar)
+        div.addEventListener('mouseout', sair)
+        var b = true
+
+        function clicar()
+        {
+            confirm('Sensei Guabanára... é.. você?? 🐭🖖')
+            b = false
+            thanks.innerText = 'THANKS, NOW YOU WILL SUFFER WITH MY BRAND-NEW SPONSORSHIP, GOOGLE 👹👺💀😈'
+            cuidado.remove()
+            div.style.height = '400px'
+        }
+        function entrar()
+        {
+            if (b)
+            {
+            cuidado.innerText = '😈'
+            div.style.height = `300px`
+            }
+        }
+        function sair() 
+        {
+            if (b)
+            {
+            cuidado.innerText = ''
+            div.style.height = '230px'
+            }
+        }
+    </script>
+</html>

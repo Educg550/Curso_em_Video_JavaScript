@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body
+        {
+            background-color: rgb(70, 70, 70)
+        }
+        h1
+        {
+            color: white;
+        }
+        p
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            color: yellow;
+        }
+        button
+        {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Começando com DOM</h1>
+        <p>JavaScript gg demais</p>
+        <p id="gg">kkk eu tenhor o dom gg</p>
+    </div>
+    <div>
+        <button>
+            Clica em mim, rr
+        </button>
+    </div>
+    <script>
+        var phacked = document.getElementById('gg')
+        var hack = 'grupo hakc ado kkkkkkkkkkkkkkkkkkkkkkkkkkkk'
+        alert(`"kkk eu tenhor o dom gg" agora virou: "${hack}"` )
+        phacked.innerText = hack
+    </script>
+</body>
+</html>

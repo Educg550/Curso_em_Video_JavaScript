@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <style>
+        h3, p
+        {
+            margin-left: 20px;
+        }
+        h1
+        {
+            margin-left: 12px;
+            font: normal 30pt Castellar;
+            color: white;
+        }
+        h3
+        {
+            font: normal 18pt Times;
+            color: white;
+        }
+        div#area
+        {
+            background-color: rgb(11, 97, 179);
+            width: 710px;
+            height: 400px;
+        }
+        body
+        {
+            background-color: rgb(11, 97, 179);
+        }
+        p
+        {
+            color: white;
+            font: normal 14pt Helvetica;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <h1>DETRAN</h1>
+        <h3>Sistema de Multas</h3>
+        <p>Placa do Veículo: <input type="text" name="placa" id="placa" placeholder="CEL-9047"></p>
+        <p>Velocidade Máxima: <input type="number" name="vel" id="vel" placeholder="85"><em>km/h</em></p>
+        <p><input type="button" id="botao" value="Verificar"></p>
+        <p id="res"></p>
+    </div>
+    
+    <script>
+        var botao = document.getElementById('botao')
+        botao.addEventListener('click', multa)
+
+        function multa()
+        {
+            var txtvel = document.getElementById('vel')
+            var txtplaca = document.getElementById('placa')
+            var vel = Number(txtvel.value)
+            var placa = String(txtplaca.value)
+            var res = document.getElementById('res')
+
+            if (vel > 85)
+            {
+                res.innerHTML = `A velocidade máxima de 85km/h do veículo <em>${placa}</em> foi <strong>${'excedida'.toUpperCase()}</strong>: ${vel}km/h. Vsf ban!`
+            }
+            else
+            {
+                res.innerHTML = `A velocidade máxima de 85km/h do veículo <em>${placa}</em> foi <strong>${'respeitada'.toUpperCase()}</strong>: ${vel}km/h. Continue assim! (e use o cinto de segurança, boomer!)`
+            }
+        }
+    </script>
+</body>
+</html>
