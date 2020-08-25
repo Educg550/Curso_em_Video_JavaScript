@@ -1,3 +1,7 @@
+var img = document.createElement('img')
+img.setAttribute('id', 'imgteste')
+img.setAttribute('src', 'https://upload.wikimedia.org/wikipedia/commons/5/55/Dalailama1_20121014_4639.jpg')
+
 function sexoIdade()
 {
     var data = new Date()

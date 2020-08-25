@@ -1,0 +1,36 @@
+body
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(53, 53, 53);
+}
+
+h1, h3, p
+{
+    color: white;
+    margin: 30px;
+}
+
+h1
+{
+    font: normal 50pt BadaBoom BB;
+}
+
+section#area
+{
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+    margin: auto;
+    background-color: rgb(80, 80, 80);
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.637);
+}
+
+input#play
+{
+    width: 120px;
+    height: 60px;
+    font: normal 18pt Arial;
+}
