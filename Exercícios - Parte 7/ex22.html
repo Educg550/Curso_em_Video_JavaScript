@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números Risum&copy;</title>
+
+    <link rel="stylesheet" href="ex22.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números Risum&copy;</h1>
+    </header>
+
+    <section id="area">
+
+        <div id="entrada">
+            <p>Digite abaixo um número entre 1 e 100:</p>
+            <p>
+                <input type="number" id="input" placeholder="Número entre 1 e 100">
+                <input type="button" id="play" value="Acrescentar" onclick="Acrescentar()">
+            </p>
+            
+        </div>
+
+        <div id="saida">
+            <p><textarea id="log" cols="30" rows="10"></textarea></p>
+            <p><input type="button" value="Limpar" id="limpar" onclick="Limpar()"></p>
+            <div id="output"></div>
+        </div>
+
+    </section>
+
+    <footer><p>Risum.org&copy; 2020 - Todos os direitos reservados</p></footer>
+
+    <script src="ex22.js"></script>
+</body>
+</html>
